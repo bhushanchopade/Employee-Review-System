@@ -1,0 +1,27 @@
+.navbar{
+  background-color: hsl(61, 70%, 49%)  ;
+}
+
+
+.work_title,
+.review_title,
+.assignAdmin_title {
+  text-align: center;
+}
+.setWork_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.setReview_container {
+  width: 60%;
+  padding: 1rem 0.5rem;
+  border: 1px solid #000000;
+  margin : 1rem 0 ;
+}
+.assignAdmin_container {
+  width: 60%;
+  padding: 1rem 0.5rem;
+  border: 1px solid #000000 ;
+}

@@ -1,0 +1,38 @@
+
+    <link rel="stylesheet" href="../assets/CSS/employees.css" />
+    <%- include('_header')%>
+    <!-- Employee Container -->
+    <div class="card_container " style="
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+">
+      <% for(let i=0;i < employees.length;i++){ %>
+
+      
+
+      <div class="card w-25" style="
+      
+      margin: 10px 10px;
+      
+  " >
+        <div class="card-header">
+          <%=employees[i].name %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Admin : <%=employees[i].isAdmin %></h5>
+          <p class="card-text">Email : <%=employees[i].email %></p>
+          <p class="card-text">Password : <%=employees[i].password %></p>
+          <a
+          href="/admin/delete-employee/<%=employees[i]._id%>"
+          class="btn btn-danger"
+          type="DEL">
+          Delete
+        </a>
+        </div>
+      </div>
+      <%}%>
+
+    </div>

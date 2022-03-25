@@ -1,0 +1,54 @@
+
+    <link rel="stylesheet" href="../assets/CSS/home.css" />
+    <%- include('_header') %>
+    <main class="home_container">
+      <div id="left_section">
+        <div class="section_heading">
+          <h5>To Review</h5>
+        </div>
+        <%if(recipients){%>
+        <div>
+          <% for(let r of recipients){ %>
+          <div class="available-recipients">
+            <form action="/reviews/newReview/<%=r.id%>" method="GET">
+              <p>To: <b><%=r.name%></b></p>
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a review here"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                  name="newReview"
+                  rows="5"
+                ></textarea>
+                <label for="floatingTextarea2">Review</label>
+              </div>
+              <div class="d-grid gap-2 col-6 mt-3 mx-auto form_button">
+                <button class="btn btn-dark" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+          <%}%>
+        </div>
+        <%}%>
+      </div>
+
+      <div id="right_section">
+        <div class="section_heading">
+          <h5>My Reviews</h5>
+        </div>
+        <% for (r of reviews){%>
+        <div class="reviews_container">
+          <div>
+            <p>From: <b><%=r.name%></b></p>
+          </div>
+          <div>
+            <p>message : <%=r.review%></p>
+          </div>
+          <div>
+            <p>Updated At: <%=r.updated%></p>
+          </div>
+        </div>
+        <%}%>
+      </div>
+    </main>

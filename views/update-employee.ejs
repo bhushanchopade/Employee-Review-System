@@ -1,0 +1,76 @@
+
+    
+    <link rel="stylesheet" href="../assets/CSS/login.css" />
+    <!-- Signup Container -->
+
+    
+    </div>
+    <div class="login_container">
+      <div>
+        <h4 class="display-4">Update employee</h4>
+      </div>
+      <hr>
+      <form action="/user/update-profile/<%= userId %>" method="POST">
+        <div class="form_container">
+          <div class="form-floating mb-3">
+            <input
+              name="id"
+              type="text"
+              class="form-control"
+              placeholder="User name"
+              value="<%= users.id %>"
+              hidden
+            />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              name="email"
+              type="text"
+              class="form-control"
+              placeholder="User name"
+              value="<%= users.email %>"
+              disabled
+            />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              name="name"
+              type="text"
+              class="form-control"
+              placeholder="User name"
+              value="<%= users.name %>"
+            />
+            <label for="floatingInput" >User name</label>
+          </div>
+          
+          
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Password"
+              value="<%= users.password %>"
+            />
+            <label for="floatingPassword">Old Password</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              name="password"
+              type="text"
+              class="form-control"
+              placeholder="Password"
+              
+            />
+            <label for="floatingPassword">Enter New Password</label>
+          </div>
+          
+          <div class="d-grid gap-2 col-6 mx-auto form_button">
+            <input class="btn btn-primary" type="submit" value="Update" />
+          </div>
+          
+        </div>
+      </form>
+    </div>
+ 

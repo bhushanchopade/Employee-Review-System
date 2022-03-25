@@ -1,0 +1,22 @@
+<header>
+    <div class="navbar navbar-light">
+      <div class="container-fluid" id="link_container">
+        <span class="navbar-brand mb-0 h1">
+          <a class="navbar-brand" href="/" type="GET">Employee Perfomance Review System</a>
+        </span>
+        <%if(locals.user && !locals.user.isAdmin){%>
+        <a class="navbar-brand" href="/user/signout" type="GET"> Signout</a>
+        <a class="btn btn-sm btn-outline-dark" href="/user/update/?id=<%= user.id%>" type="GET">Update profile</a>
+        <%}else if(locals.user && locals.user.isAdmin) {%>
+        <div>
+          <a class="btn btn-sm btn-outline-dark" href="/user/update/?id=<%= user.id%>" type="GET">Update profile</a>
+          <a class="btn btn-sm btn-outline-dark" href="/admin/admin-page" type="GET">Assign Work</a>
+          <a class="btn btn-sm btn-outline-dark" href="/admin/view-employees" type="GET">Employees</a>
+          <a class="btn btn-sm btn-outline-dark" href="/admin/add-employee" type="GET">add employee</a>
+          <a class="btn btn-outline-light" href="/user/signout" type="GET"> Signout</a>
+        </div>
+        <%}%>     
+      </div>
+    </div>
+  </header>
+  
