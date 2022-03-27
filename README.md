@@ -1,7 +1,7 @@
 # Employee-Review-System Project
 ## Live Link : https://employee-reviewsystem.herokuapp.com/user/login
 
-## Clone link : https://github.com/bhushanchopade/Employee-Review-System.git
+## Clone Repository link : https://github.com/bhushanchopade/Employee-Review-System.git
 
 ## Technology used 
 - node.js
