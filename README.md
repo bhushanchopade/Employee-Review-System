@@ -30,5 +30,5 @@
 - Admin can choose someone (employee) as reviewer to review some reciepent employee.
 
 ## Important Note about Employee Login :
-- - Employee can sign up and login into employee panel where he/she can see the feedbacks and can update his/her info.
+- Employee can sign up and login into employee panel where he/she can see the feedbacks and can update his/her info.
 
