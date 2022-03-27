@@ -25,7 +25,10 @@
 
 - Then you (prebuild admin) can make any employee as an admin.
   (Note : You can make maximum extra 1 more admin, because we have made code like this)
-
-- Employee can sign up and login into employee panel where he/she can see the feedbacks and can update his/her info
+  
 - Admin can add more employees by filling their respective details.
 - Admin can choose someone (employee) as reviewer to review some reciepent employee.
+
+## Important Note about Employee Login :
+- - Employee can sign up and login into employee panel where he/she can see the feedbacks and can update his/her info.
+
