@@ -19,8 +19,8 @@
 ## Important Note about Admin Login :
 - for login in admin panel , there is prebuild database object i.e 
 
-- email : admin@admin.com,
-  password : admin,
+- EMAIL : admin@admin.com,
+  PASSWORD : admin, 
   name : Admin .
 
 - Then you (prebuild admin) can make any employee as an admin.
