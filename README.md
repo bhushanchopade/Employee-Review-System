@@ -21,7 +21,7 @@
 
 - EMAIL : admin@admin.com,
   PASSWORD : admin, 
-  name : Admin .
+  USERNAME : Admin .
 
 - Then you (prebuild admin) can make any employee as an admin.
   (Note : You can make maximum extra 1 more admin, because we have made code like this)
