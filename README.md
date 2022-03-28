@@ -3,19 +3,6 @@
 
 ## Git Repository Clone link : https://github.com/bhushanchopade/Employee-Review-System.git
 
-## Technology used 
-- node.js
-- express
-- mongoDB
-- passport
-- ejs and layouts
-
-## Get Started 
-- clone the project
-- open terminal and write this command one by one
-- npm install
-- npm start
-
 ## Important Note about Admin Login :
 - for login in admin panel , there is prebuild database object i.e 
 
@@ -31,4 +18,21 @@
 
 ## Important Note about Employee Login :
 - Employee can sign up and login into employee panel where he/she can see the feedbacks and can update his/her info.
+
+## Get Started 
+- clone the project
+- open terminal and write this command one by one
+- npm install
+- npm start
+
+
+## Technology used 
+- node.js
+- express
+- mongoDB
+- passport
+- ejs and layouts
+
+
+
 
